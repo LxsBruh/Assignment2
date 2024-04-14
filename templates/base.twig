@@ -7,14 +7,15 @@
 <a class="skip-link screen-reader-text" href="#content">{{ _e( 'Skip to content') }}</a>
 <header class="header">
 	{% block header %}
-		<div class="wrapper">
+		<div class="wrapper flex items-center md:justify-between justify-normal grid grid-cols-1 md:grid-cols-2">
 			<h1 class="hdr-logo" role="banner">
-				<a class="hdr-logo-link" href="{{site.url}}" rel="home">{{site.name}}</a>
-			</h1>
+				<a class="hdr-logo-link " href="{{site.url}}" rel="home"><img src="{{ site.theme.link }}/static/images/cmlogo.png" class=" w-30 md:w-40	"></a>
+				<!-- <a class="hdr-logo-link text-5xl" href="{{site.url}}" rel="home">{{site.name}}</a> -->
 
-			<p>hello there</p>
+</h1>
 
-			<nav id="nav-main" class="nav-main  py-8" role="navigation">
+
+			<nav id="nav-main" class="" role="navigation">
 				{% include "menu.twig" with {'items': menu.get_items} %}
 			</nav>
 			<!-- #nav -->
@@ -22,7 +23,7 @@
 	{% endblock %}
 </header>
 
-<section id="content" role="main" class="content-wrapper">
+<section id="content" role="main" class="content-wrapper bg-gray-300">
 	{% if title %}
 		<!-- this title comes from the base.twig file -->
 		<h1>{{title}}</h1>
@@ -37,7 +38,7 @@
 			{{sidebar}}
 		</aside>
 	{% endif %}
-	<p> this hello</p>
+
 </section>
 
 {% block footer %}

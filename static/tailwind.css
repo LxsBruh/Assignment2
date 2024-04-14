@@ -10,3 +10,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wp-block-image img {
+ width:20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wp-block-image figcaption {
+    font-size: larger 
+}
