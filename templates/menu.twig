@@ -1,7 +1,7 @@
 {# MENU COMES FROM menu.twig #}
 
-{% if menu %}
-    <ul class="flex   md:justify-end">
+ {% if menu %}
+    <ul class="text-white flex   md:justify-end">
         {% for item in items %}
             <li class="{{ item.classes | join(' ') }} relative group mr-4" >
                 <a target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>

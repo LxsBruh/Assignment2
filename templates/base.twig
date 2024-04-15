@@ -7,9 +7,9 @@
 <a class="skip-link screen-reader-text" href="#content">{{ _e( 'Skip to content') }}</a>
 <header class="header">
 	{% block header %}
-		<div class="wrapper flex items-center md:justify-between justify-normal grid grid-cols-1 md:grid-cols-2">
+		<div class="wrapper bg-slate-600 flex items-center md:justify-between justify-normal grid grid-cols-1 md:grid-cols-2">
 			<h1 class="hdr-logo" role="banner">
-				<a class="hdr-logo-link " href="{{site.url}}" rel="home"><img src="{{ site.theme.link }}/static/images/cmlogo.png" class=" w-30 md:w-40	"></a>
+				<a class="hdr-logo-link " href="{{site.url}}" rel="home"><img src="{{ site.theme.link }}/static/images/newlogo.png" class=" w-30 md:w-60	"></a>
 				<!-- <a class="hdr-logo-link text-5xl" href="{{site.url}}" rel="home">{{site.name}}</a> -->
 
 </h1>
@@ -23,7 +23,7 @@
 	{% endblock %}
 </header>
 
-<section id="content" role="main" class="content-wrapper bg-gray-300">
+<section id="content" role="main" class="content-wrapper bg-slate-500">
 	{% if title %}
 		<!-- this title comes from the base.twig file -->
 		<h1>{{title}}</h1>

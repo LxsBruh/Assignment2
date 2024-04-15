@@ -13,14 +13,15 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: '#6B7280', // Add your custom primary color
-				secondary: '#6B7280', // Add your custom secondary color
+				primary: '#a78bfa', // Add your custom primary color
+				secondary: '#a78bfa', // Add your custom secondary color
 				debug: '#6B7280', // Just so you can see how this is powerful
 				// Add more custom colors as needed
 			},
 			fontFamily: {
 				//font files are declared in html-header.twig file
-				'font-sans': ['"Futura BT"', 'sans-serif'],
+				'oswald': ['Oswald', ...defaultTheme.fontFamily.sans],
+				'sans': ['Didact Gothic', ...defaultTheme.fontFamily.sans],
 			},
 		}
 	},

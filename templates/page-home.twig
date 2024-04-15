@@ -4,31 +4,22 @@
 
 {% block content %}
 
-	<div class="content-wrapper grid grid-cols-2 gap-4 ml-5">
+	<div class="content-wrapper">
 		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
 			<section class="article-content">
-				<h1 class="article-h1 text-3xl text-center">{{post.title}}</h1>
-				<div class="article-body">
+				<h1 class="article-h1 font-sans text-white text-3xl font-bold text-center">{{post.title}}</h1>
+				<div class="article-body grid grid-cols-2 gap-4 ml-5 text-white space-y-3">
 					{{post.content}}
+					<div class="flex items-center justify-center">
+					<img src="{{ site.theme.link }}/static/images/theboard.png" class="w-4/5">
+					</div>
 				</div>
 			</section>
 		</article>
 	</div>
 
 
-	<div
-		class="debug p-8 bg-debug">
-		{# useful for debugging, delete later #}
-		<h1>Debug info</h1>
 
-		<p class="pb-4">post name:
-			{{post.name}}</p>
-
-		<p>file name: page-home.twig</p>
-
-		{# Output what is in the post #}
-		{# {{dump(post)}} #}
-	</div>
 
 	<!-- /content-wrapper -->
 {% endblock %}

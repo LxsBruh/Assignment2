@@ -1,11 +1,12 @@
-<article class="tease m-5 text-left tease-{{post.type}}" id="tease-{{post.id}}">
-	{% block content %}
-		<h2 class="h2">
-			<a href="{{post.link}}">{{post.title}}</a>
-		</h2>
-		<p>{{ post.excerpt({ words:10, read_more: "Keep reading &rarr;" }) }}</p>
-	</p>
-	{% if post.thumbnail %}
-		<img src="{{post.thumbnail.src}}"/>
-	{% endif %}
+<article class="tease  m-10 tease-{{post.type}} my-12 " id="tease-{{post.id}}">
+    {% block content %}
+        <h2 class="h2 font-bold text-center text-4xl text-white">
+            <a href="{{post.link}}">{{post.title}}</a>
+        </h2>
+        <img src="{{ site.theme.link }}/static/cm.png">
+        <p>{{ post.excerpt({ words:10, read_more: "Keep reading &rarr;" }) }}</p>
+    </p>
+    {% if post.thumbnail %}
+        <img src="{{post.thumbnail.src}}"/>
+    {% endif %}
 {% endblock %}</article>
